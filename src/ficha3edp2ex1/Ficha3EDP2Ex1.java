@@ -22,7 +22,7 @@ public class Ficha3EDP2Ex1 {
         
         
         PostFix calc = new PostFix();
-        
+        /*
         try {
             System.out.println(calc.calcular("1 2 +"));
             System.out.println(calc.calcular("3 5 + +"));
@@ -30,6 +30,19 @@ public class Ficha3EDP2Ex1 {
             System.out.println(calc.calcular("2 2 *"));
             System.out.println(calc.calcular("4 2 /"));
             System.out.println(calc.calcular("4 -2 /"));
+        } catch (EmptyCollectionException ex) {
+            Logger.getLogger(Ficha3EDP2Ex1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        */
+        PostFix2 calc2 = new PostFix2();
+        
+        try {
+            System.out.println(calc2.calcular("1 2 +"));
+            System.out.println(calc2.calcular("3 5 + +"));
+            System.out.println(calc2.calcular("10 5 -"));
+            System.out.println(calc2.calcular("2 2 *"));
+            System.out.println(calc2.calcular("4 2 /"));
+            System.out.println(calc2.calcular("4 -2 /"));
         } catch (EmptyCollectionException ex) {
             Logger.getLogger(Ficha3EDP2Ex1.class.getName()).log(Level.SEVERE, null, ex);
         }
